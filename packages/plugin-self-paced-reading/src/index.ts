@@ -127,7 +127,7 @@ const info = <const>{
     word: {
       type: ParameterType.COMPLEX,
     },
-    /** An array tracking the reaction time at each word **/
+    /** An array tracking the response time at each word **/
     rt: {
       type: ParameterType.COMPLEX,
     },
