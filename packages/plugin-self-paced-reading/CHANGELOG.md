@@ -1,5 +1,12 @@
 # @jspsych-contrib/plugin-self-paced-reading
 
+## 2.1.0
+
+### Major Changes
+
+- Updated for compatibility with jsPsych v8.
+  - Added `data` and `version` properties to the `info` object.
+
 ## 2.0.0
 
 ### Major Changes

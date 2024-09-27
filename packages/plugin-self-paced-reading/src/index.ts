@@ -2,6 +2,7 @@ import { JsPsych, JsPsychPlugin, ParameterType, TrialType } from "jspsych";
 
 const info = <const>{
   name: "self-paced-reading",
+  version: "2.1.0",
   parameters: {
     sentence: {
       type: ParameterType.STRING,
@@ -119,6 +120,24 @@ const info = <const>{
       type: ParameterType.INT,
       pretty_name: "inter-word-interval",
       default: 0,
+    },
+  },
+  data: {
+    /** An ordered array of words comprising the sentence used for the trial **/
+    word: {
+      type: ParameterType.COMPLEX,
+    },
+    /** An array tracking the reaction time at each word **/
+    rt: {
+      type: ParameterType.COMPLEX,
+    },
+    /** An array tracking the total time from the start of the trial to the current word **/
+    rt_total: {
+      type: ParameterType.COMPLEX,
+    },
+    /** The sentence used for the trial, with line breaks removed **/
+    sentence: {
+      type: ParameterType.STRING,
     },
   },
 };
